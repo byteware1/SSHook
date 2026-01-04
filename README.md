@@ -25,8 +25,12 @@ Follow steps:
 ### 2. Install Deps
 Install Discords library:
 `pip install -U discord.py`
-pyautogui:
+
+Pyautogui:
 `pip install pyautogui`
+
+Pillow:
+pip install pyscreeze pillow
 
 Complete with your details:
 
