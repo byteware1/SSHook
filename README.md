@@ -22,8 +22,12 @@ Follow steps:
 >Click the generated link and add the bot to the server	
 
 
-### 2. Install Discords library:
+### 2. Install Deps
+Install Discords library:
 `pip install -U discord.py`
+pyautogui:
+`pip install pyautogui`
+
 Complete with your details:
 
 <img width="974" height="342" alt="image" src="https://github.com/user-attachments/assets/1bc1b511-2095-4fdf-b3f2-de18d3fc5cef" />
