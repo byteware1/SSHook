@@ -1,42 +1,72 @@
-# SSHook
-A script that, on a bot-operated command, allows you to take a screenshot of the victim and view it on a self-created Discord server channel.
+<div align="center">
 
-### Introduction
-> Make sure u have python installed, if not, get it from  [Here](https://www.python.org/downloads/). 🐍
+# 🖥️ SSHook
 
-### 1. Bot initiation
->Go to: [Discord Bot Creating Dashboard](https://discord.com/developers/applications)
+**Discord-controlled Screenshot Tool (Python · Research Project)**
 
-Follow steps:
+![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
+![Discord](https://img.shields.io/badge/discord.py-2.x-purple)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
+![Status](https://img.shields.io/badge/status-Educational-orange)
 
->New Application → Name
->
->Bot → Add Bot → Copy TOKEN
->
->OAuth2 → URL Generator
->
->Scopes: bot, applications.commands
->
->Permissions: Send Messages
->
->Click the generated link and add the bot to the server	
+</div>
 
+---
 
-### 2. Install Deps
-Install Discords library:
-`pip install -U discord.py`
+## 📌 Overview
 
-Pyautogui:
-`pip install pyautogui`
+**SSHook** is a Python-based research project demonstrating how a Discord bot can remotely interact with a host machine and return screenshots on command.
 
-Pillow:
-pip install pyscreeze pillow
+The script:
+- Connects to a Discord bot
+- Automatically creates a dedicated text channel
+- Responds to a bot command by capturing a screenshot
+- Sends the screenshot directly to Discord
 
-Complete with your details:
+> ⚠️ **This project is for educational and research purposes only.  
+Use only on systems you own or have explicit permission to access.**
 
-<img width="974" height="342" alt="image" src="https://github.com/user-attachments/assets/1bc1b511-2095-4fdf-b3f2-de18d3fc5cef" />
+---
 
+## ✨ Features
 
-### Done!
+- 🤖 Discord bot command control
+- 📸 Screenshot capture via `pyautogui`
+- 📡 Automatic Discord channel creation
+- 🧠 Host-based identification (local IP-based channel name)
+- ⚡ Simple, lightweight Python implementation
 
-`byteware team`
+---
+
+## 🧱 Tech Stack
+
+- **Language:** Python 3
+- **Discord API:** discord.py
+- **Screenshot:** pyautogui + Pillow
+- **Networking:** socket
+
+---
+
+## 📂 How It Works (High-Level)
+
+1. Bot connects to Discord using a token  
+2. On startup, it:
+   - Detects the local IP
+   - Creates (or reuses) a dedicated text channel
+3. When the `!shot` command is issued:
+   - A screenshot is taken
+   - The image is sent to the Discord channel
+
+---
+
+## ⚙️ Setup Guide
+
+### 1️⃣ Install Python
+
+Make sure Python is installed:
+
+👉 https://www.python.org/downloads/
+
+Verify:
+```bash
+python --version
